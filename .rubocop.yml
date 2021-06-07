@@ -17,6 +17,8 @@ AllCops:
 Rails/FilePath:
   Exclude:
     - "config/environments/development.rb"
+    - "config/environments/production.rb"
+    - "config/puma.rb"
 
 Rails/Output:
   Exclude:
