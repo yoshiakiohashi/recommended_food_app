@@ -26,14 +26,14 @@ class FoodsController < ApplicationController
   end
 
   def destroy
-    @food.destory!
+    @food.destroy!
     redirect_to root_path
   end
 
   private
 
   def food_params
-    params.require(:food).permit(:name, :comment)
+    params.require(:food).permit(:name, :comment, :image)
   end
 
   def set_post
